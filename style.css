@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 1rem;
+    background-color: #dfe6e9;
+    font-family: 'Lato',sans-serif;
+}
+
+.hideable {
+    display: none;
+}
+
+.show .hideable {
+    display: block;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    gap: 20px; /* Space between items */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.hideable div{
+    flex: 0 1 calc(20% - 15px); /* Adjusts to 4 items per row (25% each) minus the gap */
+    padding: 20px;
+    display:inline-flexbox;
+    background: aqua;
+    border:2px solid black;
+    margin: 5px;
+}
+
+.sectionshow{
+    display: flex;
+}
